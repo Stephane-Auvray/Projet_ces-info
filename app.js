@@ -5,10 +5,23 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
-var indexRouter = require("./routes/api");
+// routes
+var indexRouter = require("./routes/index");
 var apiRouter = require("./routes/api");
 
 var app = express();
+
+// Mongodb Config =============================================================
+
+const mongoose = require("mongoose");
+const mongoDB = "mongodb://127.0.0.1/myapp"; // connecte a la base myapp de mongodb. -> use myapp
+mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
+
+// Get the default connection
+const db = mongoose.connection;
+
+// Bind connection to error event (to get notification of connection errors)
+db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -20,7 +33,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
+
+// Basics routes
 app.use("/", indexRouter);
+
+// Api routes
 app.use("/api", apiRouter);
 
 // catch 404 and forward to error handler
