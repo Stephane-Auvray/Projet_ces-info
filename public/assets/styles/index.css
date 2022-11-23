@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url(../fonts/IBMPlexSans-Medium.ttf);
+}
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url(../fonts/Merriweather-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url(../fonts/Roboto-Thin.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  color: rgb(238, 238, 238);
+}
+
+header {
+  background: url(../img/image\ de\ fond.jpg);
+}
+header nav {
+  background: rgb(155, 155, 155);
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.4rem solid #854e5f;
+}
+header nav .logo {
+  display: flex;
+  margin: 0 auto;
+  width: 120px;
+  height: 70px;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+  font-size: 1rem;
+  padding: 0 120px;
+}
+header .header {
+  display: flex;
+  height: 75vh;
+}
+header .header .header-left {
+  display: block;
+  width: 50%;
+  align-items: center;
+  padding-left: 6rem;
+  margin: 0 auto;
+}
+header .header .header-left .header-left-container {
+  font-family: "Merriweather-Bold";
+  padding: 1rem;
+}
+header .header .header-left .header-left-container .title1-header {
+  font-size: 3rem;
+  color: rgb(238, 238, 238);
+}
+header .header .header-left .header-left-container .title2-header {
+  font-size: 2rem;
+  color: rgb(240, 204, 113);
+}
+header .header .header-right {
+  display: block;
+  width: 50%;
+  align-items: center;
+  margin: 0 auto;
+  padding: auto;
+}
+header .header .header-right .header-top-container {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  margin: 0 auto;
+}
+header .header .header-right .header-top-container img {
+  margin: 0 auto;
+  width: 100%;
+}
+header .header .header-right .about {
+  background: white;
+  opacity: 75%;
+  width: 80%;
+  border: 1px solid;
+  border-radius: 5%;
+}
+
+main {
+  background: rgb(155, 155, 155);
+  margin: center;
+}
+main .contact_container {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+main .contact_container h1 {
+  padding-bottom: 1rem;
+}
+
+footer {
+  background: rgb(155, 155, 155);
+  height: 15vh;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,26 @@
+###
+
+POST http://localhost:3000/api/oportunity/create
+Content-Type: application/json
+
+{
+    "email": "bob@aol.com",
+    "name": "Bob",
+    "subject": "J'ai  un probleme...",
+    "content": "En fait, j'ai un souci de clavier avec la barre Espace",
+    "file_data": null
+}
+
+###
+POST http://localhost:3000/api/users/create
+Content-Type: application/json
+
+{
+    "email": "bob@aol.com",
+    "first_name": "bob",
+    "last_name":"Beamon"
+}
+
+###
+GET http://localhost:3000/api/users/list
+

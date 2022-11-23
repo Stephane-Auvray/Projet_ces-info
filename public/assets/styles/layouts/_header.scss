@@ -1,0 +1,77 @@
+header {
+  background: url(../img/image\ de\ fond.jpg);
+
+  nav {
+    background: $grey;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 0.4rem solid #854e5f;
+
+    .logo {
+      display: flex;
+      margin: 0 auto;
+      width: 120px;
+      height: 70px;
+    }
+
+    ul {
+      @include alignChildren(space-around);
+      width: 75%;
+      font-size: 1rem;
+      padding: 0 120px;
+    }
+  }
+  .header {
+    display: flex;
+    height: 75vh;
+
+    .header-left {
+      display: block;
+      width: 50%;
+      align-items: center;
+      padding-left: 6rem;
+      margin: 0 auto;
+
+      .header-left-container {
+        font-family: "Merriweather-Bold";
+        padding: 1rem;
+
+        .title1-header {
+          font-size: 3rem;
+          color: $white;
+        }
+        .title2-header {
+          font-size: 2rem;
+          color: $yellow;
+        }
+      }
+    }
+    .header-right {
+      display: block;
+      width: 50%;
+      align-items: center;
+      margin: 0 auto;
+      padding: auto;
+
+      .header-top-container {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        margin: 0 auto;
+
+        img {
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
+      .about {
+        background: white;
+        opacity: 75%;
+        width: 80%;
+        border: 1px solid;
+        border-radius: 5%;
+      }
+    }
+  }
+}

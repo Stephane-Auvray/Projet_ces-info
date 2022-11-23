@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url(../fonts/IBMPlexSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url(../fonts/Merriweather-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url(../fonts/Roboto-Thin.ttf);
+}
+
+$white: rgb(238, 238, 238);
+$black: #21201e;
+$grey: rgb(155, 155, 155);
+$beige: rgb(146, 142, 142);
+$blue: rgb(0, 118, 188);
+$yellow: rgb(240, 204, 113);
+$green: rgb(95, 125, 79);
+$red: rgb(199, 71, 53);
+
+@mixin alignChildren($space) {
+  display: flex;
+  align-items: center;
+  justify-content: $space;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  color: $white;
+}
