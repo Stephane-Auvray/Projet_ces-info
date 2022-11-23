@@ -1,3 +1,20 @@
+## si nouvelle machine
+
+### Installation des modules du Frontend
+
+```
+cd src
+npm i
+
+```
+
+### Installation des modules du Backend
+
+```
+npm i
+
+```
+
 ## Dev
 
 ### Demarrage du Frontend
@@ -21,10 +38,24 @@ npm start
 
 ### Git
 
+Statut des fichiers dans le "stage"
+
+```
+git status
+
+```
+
 Ajout fichiers dans le "stage"
 
 ```
 git add .
+
+```
+
+MAJ des fichiers dans le "stage"
+
+```
+git add -u
 
 ```
 
